@@ -7,7 +7,7 @@ function Todo({todo , removeTodos, completeTodos}){
     }>
         <div className='content'>
             <p>{todo.text}</p>
-            <p className="category">({todo.category}, {todo.id})</p>
+            <p className="category">({todo.category})</p>
         </div>
         <div>
             <button onClick={()=>completeTodos(todo.id)} className="complete">Completar</button>
